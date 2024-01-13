@@ -12,77 +12,52 @@ using static UnityEngine.GraphicsBuffer;
 public class BuildingScript : MonoBehaviour
 {
     public GameObject[] prefab;
-    public GameObject[] prefabSilhoutte;
     public int prefabInt = 0;
-    public int prefabSilhoutteInt = 0;
 
-    public bool able;
     public TextMeshProUGUI budget;
+    bool moneyLeft = true;
     int leftToPlace = 1;
 
     public int[] value;
     public int valueInt;
 
-    Vector3 worldPosition;
-    Vector3 mousePos;
-
-    private void Start()
-    {
-        //var MaXValue = Mathf.Max(prefab.Sort());
-    }
+    public tile[] tiles;
 
     private void Update()
     {       
-        var val = GetComponent<placeBuildScript>();
-
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && moneyLeft == true)
         {
-            if (able)
+            tile nearestTile = null;
+            float nearestDistance = float.MaxValue;
+            foreach (tile tile in tiles)
             {
-                mousePos = Input.mousePosition;
-                mousePos.z = Camera.main.nearClipPlane;
-                worldPosition = Camera.main.ScreenToWorldPoint(mousePos);
-                Instantiate(prefab[prefabInt], worldPosition, Quaternion.identity);
+                float dist = Vector2.Distance(tile.transform.position, Camera.main.ScreenToWorldPoint(Input.mousePosition));
+                if (dist < nearestDistance)
+                {
+                    nearestDistance = dist;
+                    nearestTile = tile;
+                }
+            }
 
-                int budgetInt = int.Parse(budget.text);
-                budgetInt -= value[valueInt];
-                budget.text = budgetInt.ToString();
-
+            if (nearestTile.Occupied == false)
+            {
+                Instantiate(prefab[prefabInt], nearestTile.transform.position, Quaternion.identity);
+                nearestTile.Occupied = true;
+                int money = int.Parse(budget.text);
+                money -= value[valueInt];
+                budget.text = money.ToString();
             }
         }
 
         if (int.Parse(budget.text) <= 0)
         {
-            able = false;
+            moneyLeft = false;
         }
-
-        //Ray ray = Camera.main.ScreenPointToRay(mousePos);
-        //RaycastHit hit;
-
-        //if (Physics.Raycast(ray, out hit))
-        //{
-
-        //    if (hit.transform.tag == "Building")
-        //    {
-        //        return;
-        //    }
-        //    else
-        //    {
-        //        return;
-        //    }
-        //}
-
-        //if (Input.GetKeyDown(KeyCode.D))
-        //{
-        //    Vector3 newRotation = new Vector3(0, 0, transform.eulerAngles.z + 90);
-        //    transform.eulerAngles = newRotation;
-        //}
     }
 
     public void Cube()
     {       
         prefabInt = 0;
-        prefabSilhoutteInt = 0;
         //Instantiate(prefabSilhoutte[prefabSilhoutteInt], worldPosition, Quaternion.identity);
 
         valueInt = 1;
@@ -91,7 +66,6 @@ public class BuildingScript : MonoBehaviour
     public void Rectangle()
     {        
         prefabInt = 1;
-        prefabSilhoutteInt = 1;
         //Instantiate(prefabSilhoutte[prefabSilhoutteInt], worldPosition, Quaternion.identity);
         valueInt = 1;
     }
@@ -99,7 +73,6 @@ public class BuildingScript : MonoBehaviour
     public void Triangle()
     {       
         prefabInt = 2;
-        prefabSilhoutteInt = 2;
         //Instantiate(prefabSilhoutte[prefabSilhoutteInt], worldPosition, Quaternion.identity);
 
         valueInt = 4;
