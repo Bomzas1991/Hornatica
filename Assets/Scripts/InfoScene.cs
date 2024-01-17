@@ -6,34 +6,24 @@ using UnityEngine.SceneManagement;
 public class InfoScene : MonoBehaviour
 {
     public GameObject[] displayInfo;
+    int info = 0;
 
     public void switchSceneRight()
     {
-        int info = 1;
         info++;
 
-        displayInfo[info].SetActive(true);
-
-        if (info > 3)
+        if (info > 2)
         {
-            info = 1;
+            info = 0;
+            displayInfo[1].SetActive(false);
+            displayInfo[2].SetActive(false);
         }
-    }
-    public void switchSceneLeft()
-    {
-        int info = 1;
-        info--;
 
         displayInfo[info].SetActive(true);
-
-        if (info < 1)
-        {
-            info = 3;
-        }
     }
 
     public void back()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("Main menu");
     }
 }

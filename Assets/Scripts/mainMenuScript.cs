@@ -14,8 +14,14 @@ public class mainMenuScript : MonoBehaviour
     {
         SceneManager.LoadScene("OptionsScene");
     }
+
     public void backToMenu()
     {
         SceneManager.LoadScene("Main menu");
+    }
+
+    public void infoScene()
+    {
+        SceneManager.LoadScene("InfoScene");
     }
 }
