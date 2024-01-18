@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 4269162167541041280}
   - component: {fileID: 1796946977165017485}
   - component: {fileID: 7630664656393067510}
-  - component: {fileID: 2833355438663759717}
   - component: {fileID: 5633718181434422435}
   m_Layer: 0
   m_Name: Triangle
@@ -33,7 +32,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1796946977165017485
 SpriteRenderer:
@@ -135,19 +134,6 @@ PolygonCollider2D:
       - {x: -0.5, y: -0.28866667}
       - {x: 0.5, y: -0.28866667}
   m_UseDelaunayMesh: 0
---- !u!114 &2833355438663759717
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1507459548048343488}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbd447e0ba8772241b61c55ce02036c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  value: 15
 --- !u!50 &5633718181434422435
 Rigidbody2D:
   serializedVersion: 4

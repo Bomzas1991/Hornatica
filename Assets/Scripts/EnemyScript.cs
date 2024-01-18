@@ -7,16 +7,15 @@ using static UnityEngine.GraphicsBuffer;
 public class EnemyScript : MonoBehaviour
 {
     GameObject king;
-    GameObject Building;
     public float speed;
 
     bool canMove = true;
+    float timer = 0;
 
     // Start is called before the first frame update
     void Start()
     {
         king = GameObject.FindGameObjectWithTag("Player");
-        Building = GameObject.FindGameObjectWithTag("Building");
     }
 
     // Update is called once per frame
@@ -36,16 +35,26 @@ public class EnemyScript : MonoBehaviour
             Destroy(gameObject);
         }
 
-        else if (Vector3.Distance(transform.position, Building.transform.position) < 0.001f)
-        {
-            canMove = false;
-            print("touched");
-        }
+        //else if (Vector3.Distance(transform.position, Building.transform.position) < 0.001f)
+        //{
+        //    canMove = false;
+        //    print("touched");
+        //}
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        print(collision);
+        canMove = false;
+        
+        if (collision.gameObject.tag == "Building")
+        {
+            Destroy(collision.gameObject);
+                //canMove = true;
+        }
+
     }
+
+
+
 }
 

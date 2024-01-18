@@ -76,7 +76,7 @@ public class BuildingScript : MonoBehaviour
             timer = 0;
         }
 
-        if (Input.mousePosition.x > 660 || Input.mousePosition.y < 90)
+        if (Input.mousePosition.x > 660 || Input.mousePosition.y < 140)
         {
             moneyLeft = false;
         }

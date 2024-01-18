@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 6969222307498025666}
   - component: {fileID: 5851091070055357834}
   - component: {fileID: 6778667140712651455}
-  - component: {fileID: 768848082214295340}
   - component: {fileID: 8986437623055307151}
   m_Layer: 0
   m_Name: cart (1)
@@ -33,7 +32,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!212 &5851091070055357834
 SpriteRenderer:
@@ -132,19 +131,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.28, y: 1.28}
   m_EdgeRadius: 0
---- !u!114 &768848082214295340
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6249300556133782083}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbd447e0ba8772241b61c55ce02036c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  value: 70
 --- !u!50 &8986437623055307151
 Rigidbody2D:
   serializedVersion: 4

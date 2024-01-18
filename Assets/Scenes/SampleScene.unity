@@ -2532,8 +2532,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Day:'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2e5804dc1f9a9464aa317604a267b2d3, type: 2}
-  m_sharedMaterial: {fileID: -6241962993839126218, guid: 2e5804dc1f9a9464aa317604a267b2d3, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: cc5e731b45173e840aef0c1479e1ba4d, type: 2}
+  m_sharedMaterial: {fileID: -5097749372507270117, guid: cc5e731b45173e840aef0c1479e1ba4d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2557,8 +2557,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72.42
-  m_fontSizeBase: 72.42
+  m_fontSize: 58.5
+  m_fontSizeBase: 58.5
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3487,8 +3487,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Current Time: day'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2e5804dc1f9a9464aa317604a267b2d3, type: 2}
-  m_sharedMaterial: {fileID: -6241962993839126218, guid: 2e5804dc1f9a9464aa317604a267b2d3, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: cc5e731b45173e840aef0c1479e1ba4d, type: 2}
+  m_sharedMaterial: {fileID: -5097749372507270117, guid: cc5e731b45173e840aef0c1479e1ba4d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3512,8 +3512,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
-  m_fontSizeBase: 35
+  m_fontSize: 26.1
+  m_fontSizeBase: 26.1
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3548,7 +3548,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 33.274887, y: 0, z: -59.578156, w: 0}
+  m_margin: {x: 33.274887, y: 0, z: -77.20767, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -4574,8 +4574,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 100000
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2e5804dc1f9a9464aa317604a267b2d3, type: 2}
-  m_sharedMaterial: {fileID: -6241962993839126218, guid: 2e5804dc1f9a9464aa317604a267b2d3, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: cc5e731b45173e840aef0c1479e1ba4d, type: 2}
+  m_sharedMaterial: {fileID: -5097749372507270117, guid: cc5e731b45173e840aef0c1479e1ba4d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4599,8 +4599,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72.42
-  m_fontSizeBase: 72.42
+  m_fontSize: 55.6
+  m_fontSizeBase: 55.6
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4684,7 +4684,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 95, y: 118}
+  m_AnchoredPosition: {x: 106.3, y: 118}
   m_SizeDelta: {x: 200, y: 67}
   m_Pivot: {x: 0, y: 0.52}
 --- !u!114 &1781991217
@@ -4709,8 +4709,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 0
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2e5804dc1f9a9464aa317604a267b2d3, type: 2}
-  m_sharedMaterial: {fileID: -6241962993839126218, guid: 2e5804dc1f9a9464aa317604a267b2d3, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: cc5e731b45173e840aef0c1479e1ba4d, type: 2}
+  m_sharedMaterial: {fileID: -5097749372507270117, guid: cc5e731b45173e840aef0c1479e1ba4d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4734,8 +4734,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72.42
-  m_fontSizeBase: 72.42
+  m_fontSize: 60.4
+  m_fontSizeBase: 60.4
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4770,7 +4770,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 33.274887, y: 0, z: 94.17511, w: 0}
+  m_margin: {x: 33.274887, y: 0, z: 77.804855, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -5459,7 +5459,7 @@ MonoBehaviour:
   - {fileID: 77823941}
   enemy: {fileID: 977746125984255716, guid: 25c3a621f11ab0049b98606cd30980fe, type: 3}
   moneyPerSecond: 0
-  dayLength: 10
+  dayLength: 3
 --- !u!4 &2144298221
 Transform:
   m_ObjectHideFlags: 0
