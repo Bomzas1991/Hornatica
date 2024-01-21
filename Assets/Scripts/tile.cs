@@ -6,7 +6,7 @@ public class tile : MonoBehaviour
 {
     public bool Occupied;
 
-    public Color green;
+    public Color normal;
     public Color red;
 
     private SpriteRenderer rend;
@@ -24,7 +24,7 @@ public class tile : MonoBehaviour
         }
         else
         {
-            rend.color = green;
+            rend.color = normal;
         }
     }
 }

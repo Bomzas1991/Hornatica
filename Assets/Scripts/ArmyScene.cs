@@ -34,9 +34,9 @@ public class ArmyScene : MonoBehaviour
     {
         //foreach (var firePoint in firePoints)
         //{
-        //    Instantiate(bullet, firePoint.position, Quaternion.identity);
+        //    Instantiate(bullet, firePoint.position, firePoint.rotation);
         //}
-        Instantiate(bullet, firePoints1.position, Quaternion.identity);
+        Instantiate(bullet, firePoints1.position, firePoints1.rotation);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

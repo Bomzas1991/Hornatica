@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class Bullet : MonoBehaviour
@@ -14,7 +15,8 @@ public class Bullet : MonoBehaviour
 
     void FixedUpdate()
     {
-        rb.velocity = transform.right * speed;
+        Vector2 direction = transform.forward;
+        rb.velocity += direction * speed;
 
         if (transform.position.x > 10 || transform.position.x < -10 || transform.position.y < -6 || transform.position.y > 6)
         {

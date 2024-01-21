@@ -49,6 +49,7 @@ public class EnemyScript : MonoBehaviour
         if (collision.gameObject.tag == "Building")
         {
             Destroy(collision.gameObject);
+            Destroy(gameObject);
                 //canMove = true;
         }
 
